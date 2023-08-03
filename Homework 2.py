@@ -20,12 +20,14 @@ class Person:
 
     def set_name(self, name):
         if re.match(r"^\D+$", name):
-            return name
+            self.__name = name
+            return self.__name
         else:
             return False
 
     def set_age(self, age):
         if age in range(120):
+            self.__age
             return age
         else:
             return False
