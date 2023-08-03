@@ -27,7 +27,7 @@ class Person:
 
     def set_age(self, age):
         if age in range(120):
-            self.__age
+            self.__age = age
             return age
         else:
             return False
